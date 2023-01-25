@@ -1,6 +1,12 @@
-const mainBgItem = document.querySelectorAll(".main-bg-menu-item");
-console.log(mainBgItem);
+const mainBgItems = document.querySelectorAll(".main-bg-menu-item");
+console.log(mainBgItems);
 
-mainBgItem.forEach((el) => {
-  console.log(el);
+mainBgItems.forEach((el) => {
+  el.addEventListener("click", itemsEvent);
 });
+
+function itemsEvent(e) {
+  console.log(e.target);
+}
+
+mainBgItems[0].addEventListener("click", itemsEvent);
