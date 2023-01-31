@@ -1,12 +1,14 @@
 const mainBgItems = document.querySelectorAll(".main-bg-menu-item");
-console.log(mainBgItems);
+const mainBG = document.querySelector(".main-bg");
+const mainBgColor = ["gray", "yellow", "pink", "aqua", "burlywood"];
 
 mainBgItems.forEach((el) => {
   el.addEventListener("click", itemsEvent);
 });
 
 function itemsEvent(e) {
-  console.log(e.target);
+  let activeDiv = document.getElementsByClassName("active");
+  activeDiv[0].classList.remove("active");
+  e.target.classList.add("active");
+  mainBG.style.backgroundColor = `${mainBgColor[e.target.id - 1]}`;
 }
-
-mainBgItems[0].addEventListener("click", itemsEvent);
