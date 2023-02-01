@@ -4,6 +4,40 @@ div {
 body {
   margin: 0px;
 }
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+// 공용 css
+// 공용 div 콘텐츠 콘테이너
+.contents-container {
+  padding: 0 15%;
+  margin-bottom: 50px;
+}
+.contents-title {
+  margin-bottom: 20px;
+  position: relative;
+  h2 {
+    float: left;
+  }
+  p {
+    float: right;
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+  }
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.public-p {
+  font-size: 14px;
+  color: rgb(130, 130, 130);
+}
+
 /* navbar css */
 nav {
   box-sizing: border-box;
@@ -67,6 +101,7 @@ nav {
   color: black;
   position: relative;
   transition: all 0.7s;
+  margin-bottom: 30px;
 }
 .main-bg-menu {
   width: 150px;
@@ -81,4 +116,108 @@ nav {
 }
 .active {
   background-color: tomato;
+}
+
+// first-contents css
+.first-contents-detail {
+  clear: both;
+}
+.first-contents-detail-menu {
+  border-bottom: 1px solid rgb(206, 206, 206);
+  button {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    &:hover {
+      border-bottom: 1px solid tomato;
+    }
+  }
+}
+.first-contents-detail-item-container {
+  display: flex;
+}
+.first-contents-detail-item-group {
+  margin-right: 10px;
+  width: 100%;
+}
+.first-contents-detail-item {
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  display: flex;
+  align-items: center;
+  position: relative;
+  h4 {
+    display: inline;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(228, 228, 228, 0.344);
+  }
+}
+#price {
+  color: rgb(130, 130, 130);
+  position: absolute;
+  right: 10px;
+}
+// first-contents-detail-item hover
+.first-contents-detail-item div h4 {
+  &:hover + p {
+    display: block;
+  }
+}
+.arrow-box {
+  display: none;
+  position: absolute;
+  width: 150px;
+  padding: 8px;
+  top: -30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
+.arrow-box:after {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  transform: rotate(180deg) translateX(-50%);
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+
+// second-contents css
+.second-contents-item-container {
+  display: flex;
+}
+.second-contents-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  div {
+    width: 165px;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  img {
+    width: 165px;
+    height: 165px;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
 }
