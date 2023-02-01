@@ -211,14 +211,14 @@ nav {
     width: 165px;
     height: 165px;
     transition: all 0.5s;
-    &:hover {
-      transform: scale(1.2);
-    }
   }
   h4 {
     margin-top: 15px;
     margin-bottom: 20px;
     font-weight: 400;
+  }
+  &:hover img {
+    transform: scale(1.2);
   }
 }
 
