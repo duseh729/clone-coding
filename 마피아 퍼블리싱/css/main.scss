@@ -196,21 +196,20 @@ nav {
 // second-contents css
 .second-contents-item-container {
   display: flex;
+  justify-content: space-between;
 }
 .second-contents-item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  width: (100% / 6);
+  margin-right: 15px;
   div {
-    width: 165px;
-    height: 165px;
     overflow: hidden;
+    width: 100%;
     border-radius: 10px;
   }
   img {
-    width: 165px;
-    height: 165px;
+    width: 100%;
     transition: all 0.5s;
+    height: 100%;
   }
   h4 {
     margin-top: 15px;
@@ -247,7 +246,7 @@ nav {
     justify-content: space-between;
   }
   .second-contents-item {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     width: 45%;
     div,
     img {
