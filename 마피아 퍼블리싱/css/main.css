@@ -158,18 +158,22 @@ nav {
 }
 
 .first-contents-detail-item {
-  padding: 15px 10px;
+  padding: 15px 10px 15px 0px;
   border-bottom: 1px solid rgb(206, 206, 206);
   display: flex;
   align-items: center;
   position: relative;
 }
-.first-contents-detail-item h4 {
-  display: inline;
-}
 .first-contents-detail-item:hover {
   cursor: pointer;
   background-color: rgba(228, 228, 228, 0.344);
+}
+.first-contents-detail-item .rank {
+  padding: 5px 10px;
+  text-align: center;
+}
+.first-contents-detail-item .last-rank {
+  padding: 5px 5.5px;
 }
 
 #price {

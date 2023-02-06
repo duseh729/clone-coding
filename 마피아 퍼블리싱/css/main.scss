@@ -142,17 +142,21 @@ nav {
   width: 100%;
 }
 .first-contents-detail-item {
-  padding: 15px 10px;
+  padding: 15px 10px 15px 0px;
   border-bottom: 1px solid rgb(206, 206, 206);
   display: flex;
   align-items: center;
   position: relative;
-  h4 {
-    display: inline;
-  }
   &:hover {
     cursor: pointer;
     background-color: rgba(228, 228, 228, 0.344);
+  }
+  .rank {
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .last-rank {
+    padding: 5px 5.5px;
   }
 }
 #price {
