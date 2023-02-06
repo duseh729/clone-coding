@@ -5,37 +5,10 @@ body {
   margin: 0px;
 }
 h2,
+h3,
 h4,
 p {
   margin: 0;
-}
-
-// 공용 css
-// 공용 div 콘텐츠 콘테이너
-.contents-container {
-  padding: 0 12%;
-  margin-bottom: 50px;
-}
-.contents-title {
-  margin-bottom: 20px;
-  position: relative;
-  h2 {
-    float: left;
-  }
-  p {
-    float: right;
-    color: rgb(130, 130, 130);
-    cursor: pointer;
-  }
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-.public-p {
-  font-size: 14px;
-  color: rgb(130, 130, 130);
 }
 
 /* navbar css */
@@ -229,6 +202,7 @@ nav {
   background-color: #eee;
   width: 100%;
   padding: 60px 0px;
+  margin-bottom: 50px;
   #popular {
     display: inline-block;
     padding: 5px;
@@ -237,6 +211,44 @@ nav {
     font-size: 12px;
     font-weight: 900;
     transition: all 0.3s;
+  }
+  h3 {
+    margin-top: 7px;
+    margin-bottom: 15px;
+  }
+}
+.third-contents-item-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  .third-contents-item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -7px;
+    transition: all 0.3s;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 7px -7px;
+    }
+  }
+  .third-contents-item-img {
+    width: 100%;
+  }
+}
+#third-contents-btn {
+  text-align: center;
+  button {
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 12px 70px;
+    border: 1px solid rgb(218, 218, 218);
+    cursor: pointer;
   }
 }
 
@@ -273,4 +285,35 @@ nav {
       height: 170px;
     }
   }
+}
+
+// 공용 css
+// 공용 div 콘텐츠 콘테이너
+.contents-container {
+  padding: 0 12%;
+  margin-bottom: 50px;
+}
+.contents-title {
+  margin-bottom: 20px;
+  position: relative;
+  h2 {
+    float: left;
+  }
+  p {
+    float: right;
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+  }
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.public-p {
+  font-size: 14px;
+  color: rgb(130, 130, 130);
+}
+.hidden {
+  display: none;
 }
