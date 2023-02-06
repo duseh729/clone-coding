@@ -239,6 +239,21 @@ nav {
   transform: scale(1.2);
 }
 
+.third-contents-container {
+  background-color: #eee;
+  width: 100%;
+  padding: 60px 0px;
+}
+.third-contents-container #popular {
+  display: inline-block;
+  padding: 5px;
+  color: tomato;
+  border: 1px solid tomato;
+  font-size: 12px;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
 @media screen and (max-width: 576px) {
   .nav-item,
 .nav-input {

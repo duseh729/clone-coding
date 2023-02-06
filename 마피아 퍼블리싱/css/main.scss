@@ -224,6 +224,22 @@ nav {
   }
 }
 
+// third-contents css
+.third-contents-container {
+  background-color: #eee;
+  width: 100%;
+  padding: 60px 0px;
+  #popular {
+    display: inline-block;
+    padding: 5px;
+    color: tomato;
+    border: 1px solid tomato;
+    font-size: 12px;
+    font-weight: 900;
+    transition: all 0.3s;
+  }
+}
+
 @media screen and (max-width: 576px) {
   // 네브바 반응형 css
   .nav-item,
