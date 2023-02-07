@@ -84,7 +84,6 @@ nav {
 }
 .main-bg-menu-item {
   background-color: white;
-  border: 1px solid black;
   height: 70px;
 }
 .active {
@@ -202,7 +201,7 @@ nav {
   background-color: #eee;
   width: 100%;
   padding: 60px 0px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   #popular {
     display: inline-block;
     padding: 5px;
@@ -291,7 +290,7 @@ nav {
 // 공용 div 콘텐츠 콘테이너
 .contents-container {
   padding: 0 12%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .contents-title {
   margin-bottom: 20px;

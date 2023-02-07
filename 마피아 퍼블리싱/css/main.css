@@ -96,7 +96,6 @@ nav {
 
 .main-bg-menu-item {
   background-color: white;
-  border: 1px solid black;
   height: 70px;
 }
 
@@ -216,7 +215,7 @@ nav {
   background-color: #eee;
   width: 100%;
   padding: 60px 0px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .third-contents-container #popular {
   display: inline-block;
@@ -300,7 +299,7 @@ nav {
 }
 .contents-container {
   padding: 0 12%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .contents-title {
