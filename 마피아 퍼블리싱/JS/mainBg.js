@@ -9,10 +9,12 @@ mainBgItems.forEach((el) => {
   el.addEventListener("click", itemsEvent);
 });
 
+// 메뉴 아이템 클릭시 효과
 function itemsEvent(e) {
   let activeDiv = document.getElementsByClassName("active");
   activeDiv[0].classList.remove("active");
   e.target.classList.add("active");
+  // 메인 백그라운드 색깔 봐꿔주는 코드. (이미지 넣을 수 있음)
   mainBG.style.backgroundColor = `${mainBgColor[e.target.id - 1]}`;
   // 클릭시 setInterval 시간 초기화 되도록 구현
   clearInterval(interval);
@@ -35,6 +37,7 @@ function itemsInterval() {
       // 1. 가져온 객체의 하나에 접근해서,
       // 클래스 개수가 2개인 경우 (active가 포함되어 있는지 확인을 위한 조건문)
       // 현재 객체(div)의 active는 삭제하고 다음 순서의 객체(div)에 active추가.
+      // 메인 백그라운드 색깔 바뀌는 코드 추가.
       // 그리고 반복문을 끝낸다.
     } else if (activeDiv[i].classList.length === 2) {
       activeDiv[i].classList.remove("active");
