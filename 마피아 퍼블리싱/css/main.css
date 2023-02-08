@@ -198,11 +198,6 @@ nav {
   width: 16.6666666667%;
   margin-right: 15px;
 }
-.second-contents-item div {
-  overflow: hidden;
-  width: 100%;
-  border-radius: 10px;
-}
 .second-contents-item img {
   width: 100%;
   transition: all 0.5s;
@@ -273,9 +268,38 @@ nav {
   cursor: pointer;
 }
 
+.fourth-contents-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-contents-item iframe {
+  width: 100%;
+  transition: all 0.5s;
+}
+.fourth-contents-item h4 {
+  font-weight: 400;
+}
+.fourth-contents-item p {
+  font-size: 12px;
+  color: rgb(133, 133, 133);
+}
+.fourth-contents-item:not(:last-child) {
+  margin-right: 10px;
+}
+.fourth-contents-item:hover {
+  cursor: pointer;
+}
+.fourth-contents-item:hover iframe {
+  transform: scale(1.05);
+}
+.fourth-contents-item:hover h4 {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 576px) {
   .nav-item,
-  .nav-input {
+.nav-input {
     display: none;
   }
   .nav-logo {
@@ -298,7 +322,7 @@ nav {
     width: 45%;
   }
   .second-contents-item div,
-  .second-contents-item img {
+.second-contents-item img {
     width: 170px;
     height: 170px;
   }
@@ -333,4 +357,10 @@ nav {
 
 .hidden {
   display: none;
-} /*# sourceMappingURL=main.css.map */
+}
+
+.wrap {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
