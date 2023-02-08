@@ -10,436 +10,441 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
   <body>
-    <!-- 네브바 html -->
-    <nav class="navbar">
-      <div class="navbar-first-menu">
-        <div class="nav-logo nav-item">Logo</div>
-        <div class="nav-item">악보</div>
-        <div class="nav-item">레슨<button class="btn">Beta</button></div>
-        <div class="nav-item">커뮤니티</div>
-        <div class="nav-input">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="악보를 검색하세요." />
+    <header>
+      <!-- 네브바 html -->
+      <nav class="navbar">
+        <div class="navbar-first-menu">
+          <div class="nav-logo nav-item">Logo</div>
+          <div class="nav-item">악보</div>
+          <div class="nav-item">레슨<button class="btn">Beta</button></div>
+          <div class="nav-item">커뮤니티</div>
+          <div class="nav-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="악보를 검색하세요." />
+          </div>
+        </div>
+        <div class="navbar-second-menu">
+          <div class="nav-item"><i class="fas fa-coins"></i></div>
+          <div class="nav-item"><i class="fas fa-bell"></i></div>
+          <div class="nav-item"><i class="fas fa-shopping-cart"></i></div>
+          <div class="nav-item">로그인</div>
+          <div class="nav-item">회원가입</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- 메인화면 html -->
+      <div class="main-bg">
+        <div class="main-bg-menu">
+          <div id="1" class="main-bg-menu-item active">1</div>
+          <div id="2" class="main-bg-menu-item">2</div>
+          <div id="3" class="main-bg-menu-item">3</div>
+          <div id="4" class="main-bg-menu-item">4</div>
+          <div id="5" class="main-bg-menu-item">5</div>
         </div>
       </div>
-      <div class="navbar-second-menu">
-        <div class="nav-item"><i class="fas fa-coins"></i></div>
-        <div class="nav-item"><i class="fas fa-bell"></i></div>
-        <div class="nav-item"><i class="fas fa-shopping-cart"></i></div>
-        <div class="nav-item">로그인</div>
-        <div class="nav-item">회원가입</div>
-      </div>
-    </nav>
-    <!-- 메인화면 html -->
-    <div class="main-bg">
-      <div class="main-bg-menu">
-        <div id="1" class="main-bg-menu-item active">1</div>
-        <div id="2" class="main-bg-menu-item">2</div>
-        <div id="3" class="main-bg-menu-item">3</div>
-        <div id="4" class="main-bg-menu-item">4</div>
-        <div id="5" class="main-bg-menu-item">5</div>
-      </div>
-    </div>
-    <!-- 첫번째 콘텐츠(악보리스트) html -->
-    <div class="contents-container">
-      <div class="contents-title">
-        <h2>인기악보</h2>
-        <p>악보 더보기 ></p>
-      </div>
-      <div class="first-contents-detail">
-        <div class="first-contents-detail-menu"><button>주간</button><button>야간</button></div>
-      </div>
-      <div class="first-contents-detail-item-container">
-        <div class="first-contents-detail-item-group">
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>1</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">테스트용 텍스트, 테스트용 텍스트</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+      <!-- 첫번째 콘텐츠(악보리스트) html -->
+      <div class="contents-container">
+        <div class="contents-title">
+          <h2>인기악보</h2>
+          <p>악보 더보기 ></p>
+        </div>
+        <div class="first-contents-detail">
+          <div class="first-contents-detail-menu"><button>주간</button><button>야간</button></div>
+        </div>
+        <div class="first-contents-detail-item-container">
+          <div class="first-contents-detail-item-group">
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>1</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">테스트용 텍스트, 테스트용 텍스트</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>2</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>2</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>3</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>3</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>4</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>4</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>5</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>5</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
           </div>
-        </div>
-        <div class="first-contents-detail-item-group">
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>6</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+          <div class="first-contents-detail-item-group">
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>6</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>7</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>7</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>8</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>8</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="rank"><h4>9</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="rank"><h4>9</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
-          </div>
-          <div class="first-contents-detail-item">
-            <div class="last-rank"><h4>10</h4></div>
-            <span>🔺</span>
-            <img src="images/author.png" width="50px" height="50px" alt="인물" />
-            <div style="padding-left: 10px">
-              <h4>윤하 - 사건의 지평선</h4>
-              <p class="arrow-box">윤하 - 사건의 지평선</p>
-              <p class="public-p">Cielle º 피아노 88키</p>
+            <div class="first-contents-detail-item">
+              <div class="last-rank"><h4>10</h4></div>
+              <span>🔺</span>
+              <img src="images/author.png" width="50px" height="50px" alt="인물" />
+              <div style="padding-left: 10px">
+                <h4>윤하 - 사건의 지평선</h4>
+                <p class="arrow-box">윤하 - 사건의 지평선</p>
+                <p class="public-p">Cielle º 피아노 88키</p>
+              </div>
+              <span id="price">2,000원</span>
             </div>
-            <span id="price">2,000원</span>
           </div>
         </div>
       </div>
-    </div>
-    <!-- 첫번째 콘텐츠(악보리스트) html 끝 -->
-    <!-- 두번째 콘텐츠(큐레이션) html -->
-    <div class="contents-container">
-      <div class="contents-title">
-        <h2>큐레이션</h2>
-        <p>큐레이션 더보기 ></p>
-      </div>
-      <div class="second-contents-item-container">
-        <div class="second-contents-item">
-          <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
-          <h4>리그 오브 레전드 OST</h4>
-          <p class="public-p">2022.11.07</p>
-          <p class="public-p">조회수 6848</p>
+      <!-- 첫번째 콘텐츠(악보리스트) html 끝 -->
+      <!-- 두번째 콘텐츠(큐레이션) html -->
+      <div class="contents-container">
+        <div class="contents-title">
+          <h2>큐레이션</h2>
+          <p>큐레이션 더보기 ></p>
         </div>
-        <div class="second-contents-item">
-          <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
-          <h4>리그 오브 레전드 OST</h4>
-          <p class="public-p">2022.11.07</p>
-          <p class="public-p">조회수 6848</p>
-        </div>
-        <div class="second-contents-item">
-          <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
-          <h4>리그 오브 레전드 OST</h4>
-          <p class="public-p">2022.11.07</p>
-          <p class="public-p">조회수 6848</p>
-        </div>
-        <div class="second-contents-item">
-          <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
-          <h4>리그 오브 레전드 OST</h4>
-          <p class="public-p">2022.11.07</p>
-          <p class="public-p">조회수 6848</p>
-        </div>
-        <div class="second-contents-item">
-          <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
-          <h4>리그 오브 레전드 OST</h4>
-          <p class="public-p">2022.11.07</p>
-          <p class="public-p">조회수 6848</p>
-        </div>
-        <div class="second-contents-item">
-          <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
-          <h4>리그 오브 레전드 OST</h4>
-          <p class="public-p">2022.11.07</p>
-          <p class="public-p">조회수 6848</p>
-        </div>
-      </div>
-    </div>
-    <!-- 두번째 콘텐츠(큐레이션) html 끝-->
-    <!-- 세번째 콘텐츠(인기아티스트) html 시작 -->
-    <div class="third-contents-container">
-      <div class="contents-container" style="margin-bottom: 0">
-        <p id="popular">POPULAR</p>
-        <h3>인기 아티스트</h3>
-        <div class="third-contents-item-container">
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
+        <div class="second-contents-item-container">
+          <div class="second-contents-item">
+            <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
+            <h4>리그 오브 레전드 OST</h4>
+            <p class="public-p">2022.11.07</p>
+            <p class="public-p">조회수 6848</p>
           </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
+          <div class="second-contents-item">
+            <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
+            <h4>리그 오브 레전드 OST</h4>
+            <p class="public-p">2022.11.07</p>
+            <p class="public-p">조회수 6848</p>
           </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
+          <div class="second-contents-item">
+            <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
+            <h4>리그 오브 레전드 OST</h4>
+            <p class="public-p">2022.11.07</p>
+            <p class="public-p">조회수 6848</p>
           </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
+          <div class="second-contents-item">
+            <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
+            <h4>리그 오브 레전드 OST</h4>
+            <p class="public-p">2022.11.07</p>
+            <p class="public-p">조회수 6848</p>
           </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
+          <div class="second-contents-item">
+            <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
+            <h4>리그 오브 레전드 OST</h4>
+            <p class="public-p">2022.11.07</p>
+            <p class="public-p">조회수 6848</p>
           </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
+          <div class="second-contents-item">
+            <div class="wrap"><img src="images/img.jpg" alt="" srcset="" /></div>
+            <h4>리그 오브 레전드 OST</h4>
+            <p class="public-p">2022.11.07</p>
+            <p class="public-p">조회수 6848</p>
           </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-        </div>
-        <div class="third-contents-item-container hidden">
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-        </div>
-        <div class="third-contents-item-container hidden">
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-          <div class="third-contents-item">
-            <img class="third-contents-item-img" alt="" srcset="" />
-            <p>아이유</p>
-          </div>
-        </div>
-        <div id="third-contents-btn"><button>인기 아티스트 더보기</button></div>
-      </div>
-    </div>
-    <!-- 세번째 콘텐츠(인기아티스트) html 끝 -->
-    <!-- 네번째 콘텐츠(인기연주영상) html 시작 -->
-    <div class="contents-container">
-      <div class="contents-title">
-        <h2>인기 연주 영상</h2>
-        <p>영상 더보기 ></p>
-      </div>
-      <div class="fourth-contents-container">
-        <div class="fourth-contents-item" style="margin-bottom: 15px">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
-        </div>
-        <div class="fourth-contents-item">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
-        </div>
-        <div class="fourth-contents-item">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
-        </div>
-        <div class="fourth-contents-item">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
         </div>
       </div>
-      <div class="fourth-contents-container">
-        <div class="fourth-contents-item" style="margin-bottom: 15px">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+      <!-- 두번째 콘텐츠(큐레이션) html 끝-->
+      <!-- 세번째 콘텐츠(인기아티스트) html 시작 -->
+      <div class="third-contents-container">
+        <div class="contents-container" style="margin-bottom: 0">
+          <p id="popular">POPULAR</p>
+          <h3>인기 아티스트</h3>
+          <div class="third-contents-item-container">
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
           </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
-        </div>
-        <div class="fourth-contents-item">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <div class="third-contents-item-container hidden">
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
           </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
-        </div>
-        <div class="fourth-contents-item">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <div class="third-contents-item-container hidden">
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
+            <div class="third-contents-item">
+              <img class="third-contents-item-img" alt="" srcset="" />
+              <p>아이유</p>
+            </div>
           </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
-        </div>
-        <div class="fourth-contents-item">
-          <div class="wrap">
-            <iframe
-              src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h4>대충 제목</h4>
-          <p>대충 작성자<br />대충 조회수</p>
+          <div id="third-contents-btn"><button>인기 아티스트 더보기</button></div>
         </div>
       </div>
-    </div>
-    <!-- 네번째 콘텐츠(인기연주영상) html 끝 -->
+      <!-- 세번째 콘텐츠(인기아티스트) html 끝 -->
+      <!-- 네번째 콘텐츠(인기연주영상) html 시작 -->
+      <div class="contents-container">
+        <div class="contents-title">
+          <h2>인기 연주 영상</h2>
+          <p>영상 더보기 ></p>
+        </div>
+        <div class="fourth-contents-container">
+          <div class="fourth-contents-item" style="margin-bottom: 15px">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+          <div class="fourth-contents-item">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+          <div class="fourth-contents-item">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+          <div class="fourth-contents-item">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+        </div>
+        <div class="fourth-contents-container">
+          <div class="fourth-contents-item" style="margin-bottom: 15px">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+          <div class="fourth-contents-item">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+          <div class="fourth-contents-item">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+          <div class="fourth-contents-item">
+            <div class="wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8AKxbpR_cdo??enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h4>대충 제목</h4>
+            <p>대충 작성자<br />대충 조회수</p>
+          </div>
+        </div>
+      </div>
+      <!-- 네번째 콘텐츠(인기연주영상) html 끝 -->
+    </main>
+    <footer></footer>
     <script src="JS/mainBg.js"></script>
     <script src="JS/popular.js"></script>
     <script src="JS/artistImg.js"></script>
