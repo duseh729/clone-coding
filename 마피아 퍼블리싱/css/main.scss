@@ -303,11 +303,15 @@ nav {
     flex-wrap: wrap;
   }
   // 두번째 컨텐츠 반응형 css
-  .second-contents-item-container {
+  .second-contents-item-container,
+  .third-contents-item-container,
+  .fourth-contents-container {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .second-contents-item {
+  .second-contents-item,
+  .third-contents-item,
+  .fourth-contents-item {
     margin-bottom: 40px;
     width: 45%;
     div,
@@ -348,9 +352,11 @@ nav {
 .hidden {
   display: none;
 }
-
+// 큐레이션, 인기아티스트 scale 이벤트가 비슷해서 따로 클래스를 만듦.
 .wrap {
   overflow: hidden;
   width: 100%;
   border-radius: 10px;
 }
+
+// 공용되는 css가 많아서 고칠 부분이 많아보임.
