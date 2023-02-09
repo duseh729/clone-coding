@@ -335,6 +335,18 @@ nav {
   cursor: pointer;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+}
+footer :first-child {
+  margin: 0;
+}
+footer p {
+  padding: 10px 0;
+}
+
 @media screen and (max-width: 576px) {
   .nav-item,
 .nav-input {

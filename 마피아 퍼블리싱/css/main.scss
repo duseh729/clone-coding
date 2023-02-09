@@ -319,6 +319,19 @@ nav {
   }
 }
 
+// footer
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  :first-child {
+    margin: 0;
+  }
+  p {
+    padding: 10px 0;
+  }
+}
+
 @media screen and (max-width: 576px) {
   // 네브바 반응형 css
   .nav-item,
