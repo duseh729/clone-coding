@@ -4,7 +4,17 @@ div {
 }
 
 body {
-  background: rgb(44, 44, 44);
   padding: 25px 300px;
+  background: rgb(44, 44, 44);
   color: white;
+}
+
+.dark-mode {
+  background: rgb(44, 44, 44);
+  color: white;
+}
+
+.white-mode {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }

@@ -1,0 +1,5 @@
+#
+리액트 내 html 태그 자동완성 하는 법.
+설정에 들어가서 emmet 검색후 
+Emmet: Include Languages 찾은 후
+항목에 javascript를 넣고 값에 javascriptreact를 넣는다.
