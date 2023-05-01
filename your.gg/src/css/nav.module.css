@@ -6,16 +6,17 @@ ul {
 
 nav {
   padding: 15px;
+  height: 70px;
 }
 
-.leftNavElement li {
+.left-nav-element li {
   float: left;
   margin-right: 10px;
   font-weight: 700;
   cursor: pointer;
 }
 
-.rightNavElement li {
+.right-nav-element li {
   float: right;
   margin-left: 10px;
   cursor: pointer;
